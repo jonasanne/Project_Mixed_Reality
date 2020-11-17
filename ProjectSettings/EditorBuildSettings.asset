@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing_QR_code.unity
     guid: 3cf4bdcf03f409248a938bc09d0741c0
+  - enabled: 0
+    path: Assets/Scenes/InformationScene.unity
+    guid: 62c40eb86d6d26b4180b53ac511dbc02
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 86ccd2f700804714188c00dadd4c4e4f,
       type: 2}
