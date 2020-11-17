@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing_QR_code.unity
     guid: 3cf4bdcf03f409248a938bc09d0741c0
   - enabled: 0
-    path: Assets/Scenes/InformationScene.unity
+    path: 
     guid: 62c40eb86d6d26b4180b53ac511dbc02
+  - enabled: 1
+    path: Assets/Scenes/InformationSceneWithoutTracker.unity
+    guid: c09410a88737a2041b7d4f57277ad3e8
+  - enabled: 1
+    path: Assets/Scenes/PickModelScene.unity
+    guid: 4741a9863dc8c0443ba33d1a948c8d17
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 86ccd2f700804714188c00dadd4c4e4f,
       type: 2}
