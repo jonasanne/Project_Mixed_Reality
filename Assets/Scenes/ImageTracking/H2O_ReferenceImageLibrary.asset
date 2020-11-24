@@ -23,7 +23,7 @@ MonoBehaviour:
       m_GuidHigh: 9249300684525428233
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: ar
+    m_Name: h2o
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5067562365991696930
@@ -33,5 +33,5 @@ MonoBehaviour:
       m_GuidHigh: 15741632088293919738
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: ch2o_test-01
+    m_Name: ch2o
     m_Texture: {fileID: 0}
