@@ -1037,6 +1037,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4303843854685514382, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303843854685514382, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: Use.RequiredFingerCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598902470647501712, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598902470647501712, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 1952113602}
+    - target: {fileID: 8108138348349000252, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108138348349000252, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: Use.RequiredFingerCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108138348349000252, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 1952113602}
+    - target: {fileID: 8108138348349000252, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
+        type: 3}
+      propertyPath: Use.RequiredMouseButtons
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2e7a7e13ed6aad49adcc1e11e8acebb, type: 3}
 --- !u!4 &2081501148 stripped
