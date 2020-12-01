@@ -9,6 +9,7 @@ TagManager:
   - Atom
   - H2O
   - CH2O
+  - NH3
   layers:
   - Default
   - TransparentFX

@@ -34,10 +34,18 @@ public class MultipleTrackers : MonoBehaviour
         {
             if (i.referenceImage.name == "h2o")
             {
+                if (Molecule2.activeSelf)
+                {
+                    Destroy(Molecule2);
+                }
                 m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule1, i.transform.position, i.transform.rotation));
             }
             else if (i.referenceImage.name == "ch2o")
             {
+                if (Molecule1.activeSelf)
+                {
+                    Destroy(Molecule1);
+                }
                 m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule2, i.transform.position, i.transform.rotation));
             }
         }
