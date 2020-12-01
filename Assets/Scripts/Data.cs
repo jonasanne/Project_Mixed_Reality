@@ -68,18 +68,7 @@ public class Data : MonoBehaviour
             State = "liquid",
             WikipediaLink = "https://en.wikipedia.org/wiki/Ethanol"
         },
-
-    }
-
-
-
-    
-
-
-
-
-
-
+    };
 
 
     // Start is called before the first frame update
