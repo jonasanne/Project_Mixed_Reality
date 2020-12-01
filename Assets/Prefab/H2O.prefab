@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: -997568859964865313}
   m_Layer: 0
   m_Name: H2O
-  m_TagString: Untagged
+  m_TagString: H2O
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
