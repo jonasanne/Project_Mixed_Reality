@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [ARCamera, Nothing, Atom]
+  tags:
+  - ARCamera
+  - Nothing
+  - Atom
+  - H2O
   layers:
   - Default
   - TransparentFX

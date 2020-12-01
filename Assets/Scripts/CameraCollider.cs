@@ -7,14 +7,12 @@ public class CameraCollider : MonoBehaviour
 {
     private void OnTriggerEnter(Collider collider_)
     {
-        var dataScript = GetComponent<Data>();
-        var modelList = dataScript.Models;
+        //var dataScript = GetComponent<Data>();
+        //var modelList = dataScript.Models;
 
         if (collider_.gameObject.tag == "ARCamera")
         {
-
-            Debug.Log(gameObject);
-            Debug.Log(gameObject.name);
+            Debug.Log(gameObject.tag); // laad tag in van de molecule
 
             Debug.Log("MoleculeLoaded");
             //Text myText = GameObject.Find("AR Session Origin/Canvas/Text").GetComponent<Text>();
@@ -22,6 +20,7 @@ public class CameraCollider : MonoBehaviour
 
             Text formule = GameObject.Find("AR Session Origin/Canvas/Formule").GetComponent<Text>();
             //formule.text = modelList.Find(p => p.ShortName == );
+            formule.text = "H2O";
 
             Text solidState = GameObject.Find("AR Session Origin/Canvas/Solid-State/Solid-State-info").GetComponent<Text>();
             solidState.text = "under 0°C";
