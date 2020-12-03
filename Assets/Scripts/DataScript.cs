@@ -25,6 +25,17 @@ public class DataScript : MonoBehaviour
         },
         new Model
         {
+            Name="Formaldehyde",
+            ShortName= "CH2O",
+            Description = "Formaldehyde (systematic name methanal) is a naturally occurring organic compound with the formula CH2O (H−CHO). " +
+            "The pure compound is a pungent-smelling colourless gas that polymerises spontaneously into paraformaldehyde (refer to section Forms below), hence it is stored as an aqueous solution (formalin). It is the simplest of the aldehydes (R−CHO). ",
+            Solid = "none",
+            Gas = "-18.9°C",
+            Liquid = "-19°C",
+            WikipediaLink = "https://en.wikipedia.org/wiki/Formaldehyde"
+        },
+        new Model
+        {
             Name="Carbon dioxide",
             ShortName= "CO2",
             Description = "Carbon dioxide (chemical formula CO2) is a colorless gas with a density about 53% higher than that of dry air. Carbon dioxide molecules consist of a carbon atom covalently double bonded to two oxygen atoms. It occurs naturally in Earth's atmosphere as a trace gas." +

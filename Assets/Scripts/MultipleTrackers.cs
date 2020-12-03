@@ -29,24 +29,31 @@ public class MultipleTrackers : MonoBehaviour
 
     void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs args_)
     {
-
         foreach (ARTrackedImage i in args_.added)
         {
             if (i.referenceImage.name == "h2o")
             {
-                if (Molecule2.activeSelf)
-                {
-                    Destroy(Molecule2);
-                }
+                //if (Molecule2.activeSelf == true)
+                //{
+                //    Molecule2.SetActive(false);
+                //}
                 m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule1, i.transform.position, i.transform.rotation));
+                //if (Molecule1.activeSelf == false)
+                //{
+                //    Molecule1.SetActive(true);
+                //}
             }
             else if (i.referenceImage.name == "ch2o")
             {
-                if (Molecule1.activeSelf)
-                {
-                    Destroy(Molecule1);
-                }
+                //if (Molecule1.activeSelf == true)
+                //{
+                //    Molecule1.SetActive(false);
+                //}
                 m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule2, i.transform.position, i.transform.rotation));
+                //if (Molecule2.activeSelf == false)
+                //{
+                //    Molecule2.SetActive(true);
+                //}
             }
         }
 
