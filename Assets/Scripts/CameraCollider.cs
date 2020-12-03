@@ -5,34 +5,25 @@ using UnityEngine.UI;
 
 public class CameraCollider : MonoBehaviour
 {
-    public DataScript d;
+    private DataScript d;
+    private Wikipedia w;
     private void OnTriggerEnter(Collider collider_)
     {
         d = GetComponent<DataScript>();
+        w = GetComponent<Wikipedia>();
+        Debug.Log(w.URL);
+        
         var modelList = d.Models;
-        //Debug.Log(d);
-        //Debug.Log(d.Models);
-        //foreach (Model i in modelList)
-        //{
-        //    Debug.Log(i.ShortName);
-        //}
-
-        //Debug.Log(modelList.Find(m => m.ShortName == "H2O").Name);
-
-        //Debug.Log(modelList);
 
         if (collider_.gameObject.tag == "ARCamera")
         {
+            Debug.Log("MoleculeLoaded");
+
+            
 
             Model model = modelList.Find(m => m.ShortName == gameObject.tag);
-            //Debug.Log(gameObject.tag); // laad tag in van de molecule
             var tagname = gameObject.tag;
-
-
-            Debug.Log("MoleculeLoaded");
-            //Text myText = GameObject.Find("AR Session Origin/Canvas/Text").GetComponent<Text>();
-            //myText.text = "H2OLoaded";
-
+            
             Text formule = GameObject.Find("AR Session Origin/Canvas/Formule").GetComponent<Text>();
             formule.text = model.ShortName;
 
@@ -48,7 +39,9 @@ public class CameraCollider : MonoBehaviour
             Text infoMolecule = GameObject.Find("AR Session Origin/Canvas/Info").GetComponent<Text>();
             infoMolecule.text = model.Description.Substring(0,90) + "...";
 
-            //WikiLink = "https://en.wikipedia.org/wiki/Water";
+            //wikipedia link
+            w.URL = model.WikipediaLink;
+
         }
     }
 
