@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ReferenceLibrary: {fileID: 11400000, guid: dad44afbd2251bc4fa7dd104f58b4256, type: 2}
-  m_MaxNumberOfMovingImages: 3
+  m_MaxNumberOfMovingImages: 2
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &969513197
 MonoBehaviour:
@@ -1115,10 +1115,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36b9ab5c7998bc4994988e0fb824836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Molecule1: {fileID: 3076807898174587496, guid: f2e7a7e13ed6aad49adcc1e11e8acebb,
-    type: 3}
-  Molecule2: {fileID: 2792578852487967506, guid: 4aa86c6bb6a59c947996d51651656975,
-    type: 3}
+  h2o: {fileID: 3076807898174587496, guid: f2e7a7e13ed6aad49adcc1e11e8acebb, type: 3}
+  ch2o: {fileID: 2792578852487967506, guid: 4aa86c6bb6a59c947996d51651656975, type: 3}
+  nh3: {fileID: 5163380580477520178, guid: e22c5286b074a1e41893c2b105b1ea79, type: 3}
+  co2: {fileID: 7766402916437981688, guid: f90939466f77ab94ca7fa932feb82de6, type: 3}
+  so2: {fileID: 8543172325843680857, guid: 0ff0c4832cc4d8545b62e7cfec218708, type: 3}
+  ch4: {fileID: 1966007316294717836, guid: e09d253928fa5f74c97abfe7bd9f1929, type: 3}
+  c2h5oh: {fileID: 8058638863952720094, guid: e2df4056da8dbca41897cf7fe133563d, type: 3}
 --- !u!1 &1012757957
 GameObject:
   m_ObjectHideFlags: 0

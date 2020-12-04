@@ -6,8 +6,13 @@ using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class MultipleTrackers : MonoBehaviour
 {
-    public GameObject Molecule1;
-    public GameObject Molecule2;
+    public GameObject h2o;
+    public GameObject ch2o;
+    public GameObject nh3;
+    public GameObject co2;
+    public GameObject so2;
+    public GameObject ch4;
+    public GameObject c2h5oh;
 
     ARTrackedImageManager m_image_tracker;
     Dictionary<int, GameObject> m_spawned_worlds = new Dictionary<int, GameObject>();
@@ -37,7 +42,7 @@ public class MultipleTrackers : MonoBehaviour
                 //{
                 //    Molecule2.SetActive(false);
                 //}
-                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule1, i.transform.position, i.transform.rotation));
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(h2o, i.transform.position, i.transform.rotation));
                 //if (Molecule1.activeSelf == false)
                 //{
                 //    Molecule1.SetActive(true);
@@ -45,15 +50,27 @@ public class MultipleTrackers : MonoBehaviour
             }
             else if (i.referenceImage.name == "ch2o")
             {
-                //if (Molecule1.activeSelf == true)
-                //{
-                //    Molecule1.SetActive(false);
-                //}
-                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(Molecule2, i.transform.position, i.transform.rotation));
-                //if (Molecule2.activeSelf == false)
-                //{
-                //    Molecule2.SetActive(true);
-                //}
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(ch2o, i.transform.position, i.transform.rotation));
+            }
+            else if (i.referenceImage.name == "nh3")
+            {
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(nh3, i.transform.position, i.transform.rotation));
+            }
+            else if (i.referenceImage.name == "co2")
+            {
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(co2, i.transform.position, i.transform.rotation));
+            }
+            else if (i.referenceImage.name == "so2")
+            {
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(so2, i.transform.position, i.transform.rotation));
+            }
+            else if (i.referenceImage.name == "ch4")
+            {
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(ch4, i.transform.position, i.transform.rotation));
+            }
+            else if (i.referenceImage.name == "c2h5oh")
+            {
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(c2h5oh, i.transform.position, i.transform.rotation));
             }
         }
 

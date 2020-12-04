@@ -11,6 +11,10 @@ TagManager:
   - CH2O
   - NH3
   - NH3
+  - CO2
+  - SO2
+  - CH4
+  - C2H5OH
   layers:
   - Default
   - TransparentFX
