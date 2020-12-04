@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ModelClicker : MonoBehaviour
 {
 
-    public GameObject gameObject;
-    public GameObject[] gameObjectsWithTags;
+    //public GameObject gameObject;
+    private GameObject[] gameObjectsWithTags;
+    private AtomDataScript datascript;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class ModelClicker : MonoBehaviour
         {
 
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.allCameras[0].ScreenPointToRay(Input.mousePosition);
 
             if(Physics.Raycast(ray, out hit))
             {
@@ -35,5 +37,42 @@ public class ModelClicker : MonoBehaviour
     private void PrintName(GameObject go)
     {
         Debug.Log(go.name);
+        GameObject canvas = gameObject.transform.Find("Canvas").gameObject;
+        GameObject canvasAtom = gameObject.transform.Find("CanvasAtom").gameObject;
+
+        if (canvas.activeSelf == true)
+        {
+            canvas.SetActive(false);
+        }
+
+        canvasAtom.SetActive(true);
+
+        datascript = GetComponent<AtomDataScript>();
+        var modelList = datascript.Atoms;
+
+        //Text text = GameObject.Find("AR Session Origin/Canvas/Text").GetComponent<Text>();
+        //text.text = go.name;
+
+        Atom model = modelList.Find(m => m.ShortName == go.name);
+        //var tagname = gameObject.tag;
+
+        Text atom = GameObject.Find("AR Session Origin/CanvasAtom/Atominfo/Atom").GetComponent<Text>();
+        atom.text = model.ShortName;
+
+        Text title = GameObject.Find("AR Session Origin/CanvasAtom/Atominfo/Title").GetComponent<Text>();
+        title.text = model.Name;
+
+        Text weight = GameObject.Find("AR Session Origin/CanvasAtom/Atominfo/Weight").GetComponent<Text>();
+        weight.text = model.Weight;
+
+        Text number = GameObject.Find("AR Session Origin/CanvasAtom/Atominfo/Number").GetComponent<Text>();
+        number.text = model.Number;
+
+        Text infoAtom = GameObject.Find("AR Session Origin/CanvasAtom/AtomInfoFull").GetComponent<Text>();
+        infoAtom.text = model.Description.Substring(0, 90) + "...";
+
+        //wikipedia link
+
     }
+
 }

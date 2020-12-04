@@ -15,6 +15,7 @@ TagManager:
   - SO2
   - CH4
   - C2H5OH
+  - S
   layers:
   - Default
   - TransparentFX

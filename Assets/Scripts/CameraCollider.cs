@@ -19,8 +19,6 @@ public class CameraCollider : MonoBehaviour
         {
             Debug.Log("MoleculeLoaded");
 
-            
-
             Model model = modelList.Find(m => m.ShortName == gameObject.tag);
             var tagname = gameObject.tag;
             
