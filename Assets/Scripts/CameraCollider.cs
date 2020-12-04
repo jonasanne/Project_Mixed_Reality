@@ -37,9 +37,11 @@ public class CameraCollider : MonoBehaviour
             Text infoMolecule = GameObject.Find("AR Session Origin/Canvas/Info").GetComponent<Text>();
             infoMolecule.text = model.Description.Substring(0,90) + "...";
 
+            
             //wikipedia link
             w.URL = model.WikipediaLink;
-
+            //proberen met playerpref
+            PlayerPrefs.SetString("WikiLink", w.URL);
         }
     }
 

@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 195940199}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 208431960}
   m_Layer: 5
   m_Name: H2O
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 236022554}
   m_Layer: 5
   m_Name: C2H5OH
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 271203975}
   m_Layer: 5
   m_Name: NH3
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 282818822}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 355734057}
   m_Layer: 5
   m_Name: CO2
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 544043992}
   m_Layer: 5
   m_Name: SO2
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,7 +1711,7 @@ GameObject:
   - component: {fileID: 883171076}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 905242562}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1953,7 +1953,7 @@ GameObject:
   - component: {fileID: 910103197}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2611,7 +2611,7 @@ GameObject:
   - component: {fileID: 1279181910}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ListBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3686,7 +3686,7 @@ GameObject:
   - component: {fileID: 1730321240}
   m_Layer: 5
   m_Name: CH4
-  m_TagString: Untagged
+  m_TagString: MoleculeName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3819,6 +3819,7 @@ GameObject:
   - component: {fileID: 1990340927}
   - component: {fileID: 1990340926}
   - component: {fileID: 1990340925}
+  - component: {fileID: 1990340929}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3906,6 +3907,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1990340929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990340924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9758480c91663c345af016df76aa746b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btns:
+  - {fileID: 195940199}
+  - {fileID: 883171076}
+  - {fileID: 282818822}
+  - {fileID: 910103197}
+  - {fileID: 1279181910}
+  - {fileID: 905242562}
+  sceneName: Main
 --- !u!1 &2065543754
 GameObject:
   m_ObjectHideFlags: 0

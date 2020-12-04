@@ -21,7 +21,7 @@ public class DataScript : MonoBehaviour
             Solid = "0°C",
             Gas = "100°C",
             Liquid = "0°C to 100°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Water"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Water"
         },
         new Model
         {
@@ -32,7 +32,7 @@ public class DataScript : MonoBehaviour
             Solid = "none",
             Gas = "-18.9°C",
             Liquid = "-19°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Formaldehyde"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Formaldehyde"
         },
         new Model
         {
@@ -43,7 +43,7 @@ public class DataScript : MonoBehaviour
             Solid = "-78.5°C",
             Gas = "-78.4°C",
             Liquid = "none",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Carbon_dioxide"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Carbon_dioxide"
         },
         new Model
         {
@@ -55,7 +55,7 @@ public class DataScript : MonoBehaviour
             Solid = "-77.7°C",
             Gas = "-33.3°C",
             Liquid = "-77.7°C to -33.3°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Ammonia"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Ammonia"
         },
         new Model
         {
@@ -67,7 +67,7 @@ public class DataScript : MonoBehaviour
             Solid = "-182.5°C",
             Gas = "-161.5°C",
             Liquid = "-182.5°C to -161.5°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Methane"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Methane"
         },
         new Model
         {
@@ -78,7 +78,7 @@ public class DataScript : MonoBehaviour
             Solid = "-72°C",
             Gas = "-10°C",
             Liquid = "-72°C to -10°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Sulfur_dioxide"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Sulfur_dioxide"
         },
         new Model
         {
@@ -89,7 +89,7 @@ public class DataScript : MonoBehaviour
             Solid = "-114.1°C",
             Gas = "78.2°C",
             Liquid = "-114.1°C to 78.2°C",
-            WikipediaLink = "https://en.wikipedia.org/wiki/Ethanol"
+            WikipediaLink = "http://en.wikipedia.org/wiki/Ethanol"
         },
     };
 
