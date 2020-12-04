@@ -9,8 +9,15 @@ public class Wikipedia : MonoBehaviour
 	public void OpenUrl()
     {
         URL = PlayerPrefs.GetString("WikiLink");
-        Debug.Log("Opening Url with url:"+ URL);
-        //Debug.Log(URL);
-        Application.OpenURL(URL);
+        if(URL != "")
+        {
+            Debug.Log("Opening Url with url:"+ URL);
+            Application.OpenURL(URL);
+        }
+        else
+        {
+
+            Debug.LogError("No Url");
+        }
     }
 }
