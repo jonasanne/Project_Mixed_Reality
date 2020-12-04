@@ -50,10 +50,10 @@ public class ListModelHandlerScript : MonoBehaviour
         string pathPrefab = "prefabs/" + nameMol;
         targetObject = GameObject.Find(nameMol);
         PlayerPrefs.SetString("ChosenMolecule", nameMol);
+        PlayerPrefs.SetInt("AlreadyLoaded", 0);
         //send molecule to new page
         Application.LoadLevel(sceneName);
-        
-        
+
 
     }
 
