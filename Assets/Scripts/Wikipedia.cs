@@ -6,7 +6,13 @@ public class Wikipedia : MonoBehaviour
 {
 	public string URL;
 
-	public void OpenUrl()
+    public void OnClicked(Button button)
+    {
+        Debug.Log(button.name);
+    }
+
+
+    public void OpenUrl()
     {
         URL = PlayerPrefs.GetString("WikiLink");
         if(URL != "")
