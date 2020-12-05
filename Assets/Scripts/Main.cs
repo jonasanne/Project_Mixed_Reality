@@ -32,8 +32,8 @@ public class Main : MonoBehaviour
             {
                 //load molecule
                 string PathToMol = "Assets/Prefab/" + ChosenMolecule + ".prefab";
-                GameObject _asset = AssetDatabase.LoadAssetAtPath(PathToMol, typeof(Object)) as GameObject;
-                GameObject MoleculeInstance = Instantiate(_asset);
+                //GameObject _asset = AssetDatabase.LoadAssetAtPath(PathToMol, typeof(Object)) as GameObject;
+                //GameObject MoleculeInstance = Instantiate(_asset);
             }
 
             AlreadyLoaded = 1;

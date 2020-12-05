@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Testing_QR_code.unity
     guid: 3cf4bdcf03f409248a938bc09d0741c0
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 6958cd9fdbe31d247a4091bce1f6f912
+  - enabled: 1
     path: Assets/Scenes/InformationSceneWithoutTracker.unity
     guid: c09410a88737a2041b7d4f57277ad3e8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PickModelScene.unity
     guid: 4741a9863dc8c0443ba33d1a948c8d17
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ListModels.unity
     guid: 60b14b06b50b11e4fa43aca6579bfd69
-  - enabled: 0
-    path: Assets/Scenes/StartScene.unity
-    guid: 6958cd9fdbe31d247a4091bce1f6f912
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/InformationSceneWithARTracker.unity
     guid: f3f320870416e9e41849c9163e67d5d3
   m_configObjects:
