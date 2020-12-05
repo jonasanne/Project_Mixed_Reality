@@ -5,6 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class MultipleTrackers : MonoBehaviour
@@ -17,7 +18,6 @@ public class MultipleTrackers : MonoBehaviour
     public GameObject ch4;
     public GameObject c2h5oh;
 
-    private Text text;
 
     ARTrackedImageManager m_image_tracker;
     SortedDictionary<int, GameObject> m_spawned_worlds = new SortedDictionary<int, GameObject>();
@@ -39,17 +39,15 @@ public class MultipleTrackers : MonoBehaviour
 
     void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs args_)
     {
-        Text text = GameObject.Find("AR Session Origin/Canvas/Text").GetComponent<Text>();
-        
         foreach (ARTrackedImage i in args_.added)
         {
-            if (m_spawned_worlds.Count < 2)
+            if (m_spawned_worlds.Count < 10)
             {
                 if (i.referenceImage.name == "h2o")
                 {
-                    m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(h2o, i.transform.position, i.transform.rotation));
+                m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(h2o, i.transform.position, i.transform.rotation));
                 }
-                if (i.referenceImage.name == "ch2o")
+                else if (i.referenceImage.name == "ch2o")
                 {
                     m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(ch2o, i.transform.position, i.transform.rotation));
                 }
@@ -74,11 +72,8 @@ public class MultipleTrackers : MonoBehaviour
                     m_spawned_worlds.Add(i.GetInstanceID(), Instantiate(c2h5oh, i.transform.position, i.transform.rotation));
                 }
             }
-            
-            if (m_spawned_worlds.Count == 2)
+            if (m_spawned_worlds.Count == 10)
             {
-                //text.text = m_spawned_worlds[i.GetInstanceID()].ToString();
-                text.text = m_spawned_worlds.Last().ToString();
                 Object.Destroy(m_spawned_worlds[1]);
                 m_spawned_worlds.Remove(1);
                 args_.added.Clear();
@@ -97,6 +92,21 @@ public class MultipleTrackers : MonoBehaviour
             {
                 m_spawned_worlds[id].transform.position = i.transform.position;
                 m_spawned_worlds[id].transform.rotation = i.transform.rotation;
+                if (i.trackingState == TrackingState.Limited)
+                {
+                    Debug.Log("Limited");
+                    m_spawned_worlds[id].SetActive(false);
+                }
+                if (i.trackingState == TrackingState.Limited)
+                {
+                    Debug.Log("Limited");
+                    m_spawned_worlds[id].SetActive(false);
+                }
+                if (i.trackingState == TrackingState.Tracking)
+                {
+                    Debug.Log("Tracking");
+                    m_spawned_worlds[id].SetActive(true);
+                }
             }
         }
 

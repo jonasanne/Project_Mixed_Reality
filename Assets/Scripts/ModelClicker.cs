@@ -9,6 +9,7 @@ public class ModelClicker : MonoBehaviour
     //public GameObject gameObject;
     private GameObject[] gameObjectsWithTags;
     private AtomDataScript datascript;
+    private Wikipedia wiki;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class ModelClicker : MonoBehaviour
         canvasAtom.SetActive(true);
 
         datascript = GetComponent<AtomDataScript>();
+        wiki = GetComponent<Wikipedia>();
         var modelList = datascript.Atoms;
 
         //Text text = GameObject.Find("AR Session Origin/Canvas/Text").GetComponent<Text>();
@@ -72,6 +74,20 @@ public class ModelClicker : MonoBehaviour
         infoAtom.text = model.Description.Substring(0, 90) + "...";
 
         //wikipedia link
+        wiki.URL = model.WikipediaLink;
+        //proberen met playerpref
+        PlayerPrefs.SetString("WikiLink", wiki.URL);
+    }
+
+    public void ReturnToMolecule()
+    {
+        GameObject canvas = gameObject.transform.Find("Canvas").gameObject;
+        GameObject canvasAtom = gameObject.transform.Find("CanvasAtom").gameObject;
+        if (canvas.activeSelf == false)
+        {
+            canvasAtom.SetActive(false);
+            canvas.SetActive(true);
+        }
 
     }
 

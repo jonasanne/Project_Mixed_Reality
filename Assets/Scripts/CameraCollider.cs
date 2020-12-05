@@ -7,6 +7,7 @@ public class CameraCollider : MonoBehaviour
 {
     private DataScript d;
     private Wikipedia w;
+
     private void OnTriggerEnter(Collider collider_)
     {
         d = GetComponent<DataScript>();
@@ -18,6 +19,12 @@ public class CameraCollider : MonoBehaviour
         if (collider_.gameObject.tag == "ARCamera")
         {
             Debug.Log("MoleculeLoaded");
+
+            GameObject plane = GameObject.Find("Plane");
+            if (plane.activeSelf == true)
+            {
+                plane.SetActive(false);
+            }
 
             Model model = modelList.Find(m => m.ShortName == gameObject.tag);
             var tagname = gameObject.tag;
