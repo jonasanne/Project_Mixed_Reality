@@ -52,7 +52,8 @@ public class ListModelHandlerScript : MonoBehaviour
         PlayerPrefs.SetString("ChosenMolecule", nameMol);
         PlayerPrefs.SetInt("AlreadyLoaded", 0);
         //send molecule to new page
-        Application.LoadLevel(sceneName);
+        SceneManager.LoadScene(sceneName);
+        //Application.LoadLevel(sceneName);
 
 
     }
